@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Florencia Mucci | Abogada | UBA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a1a1a;
+            --secondary: #b38b59;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --overlay: rgba(0, 0, 0, 0.7);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--light);
+            background-color: var(--dark);
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url('1.jpeg') no-repeat center center/cover;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--overlay);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+            height: 100%;
+        }
+        
+        header {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--light);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .hero-content {
+            display: flex;
+            height: calc(100% - 100px);
+            align-items: center;
+        }
+        
+        .profile-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .profile-img {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .info-section {
+            flex: 1;
+            padding-left: 50px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: var(--secondary);
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .subtitle::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .bio {
+            margin-bottom: 40px;
+            max-width: 500px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .contact-bar {
+            background: var(--primary);
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-icon {
+            margin-right: 10px;
+            color: var(--secondary);
+            font-size: 20px;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            background: var(--secondary);
+            color: var(--primary);
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-left: 20px;
+        }
+        
+        .contact-btn:hover {
+            background: #d4a762;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(179, 139, 89, 0.4);
+        }
+        
+        .btn-icon {
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 50px;
+            }
+            
+            .profile-section {
+                margin-bottom: 40px;
+            }
+            
+            .info-section {
+                padding-left: 0;
+            }
+            
+            .subtitle::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .bio {
+                margin: 0 auto 30px;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .contact-info {
+                margin-bottom: 15px;
+            }
+            
+            .contact-btn {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            
+            .profile-img {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .contact-bar {
+                padding: 15px 0;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <header>
+                <div class="logo">Dra. Mucci <span>Abogada</span></div>
+            </header>
+            
+            <div class="hero-content">
+                <div class="profile-section">
+                    <img src="2.jpeg" alt="Dra. Florencia Mucci" class="profile-img">
+                </div>
+                
+                <div class="info-section">
+                    <h1>Florencia Mucci</h1>
+                    <p class="subtitle">Abogada | Universidad de Buenos Aires</p>
+                    
+                    <div class="bio">
+                        <p>Abogada formada en la prestigiosa Universidad de Buenos Aires (UBA), especializada en brindar soluciones legales personalizadas con excelencia profesional y atención dedicada a cada caso.</p>
+                        <p>Comprometida con la defensa de los derechos de mis clientes, ofrezco asesoramiento jurídico integral con un enfoque claro, estratégico y resultados efectivos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-bar">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span>dra.florenciamucci@gmail.com</span>
+                </div>
+                
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <span>+54 9 11 2645-4771</span>
+                </div>
+                
+                <a href="https://wa.me/5491126454771" class="contact-btn">
+                    <i class="fab fa-whatsapp btn-icon"></i>
+                    Contactar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Efecto de aparición suave al cargar
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('header, .profile-img, h1, .subtitle, .bio');
+            
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 200 * index);
+            });
+            
+            // Estilos iniciales para la animación
+            const style = document.createElement('style');
+            style.innerHTML = `
+                header, .profile-img, h1, .subtitle, .bio {
+                    opacity: 0;
+                    transition: all 0.8s ease;
+                }
+                header { transform: translateY(-20px); }
+                .profile-img { transform: translateY(20px); }
+                h1 { transform: translateY(20px); }
+                .subtitle { transform: translateY(20px); }
+                .bio { transform: translateY(20px); }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
