@@ -176,6 +176,16 @@
             margin-right: 8px;
         }
         
+        .email-btn {
+            background: #3498db;
+            margin-left: 10px;
+        }
+        
+        .email-btn:hover {
+            background: #5dade2;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+        
         @media (max-width: 992px) {
             .hero-content {
                 flex-direction: column;
@@ -208,7 +218,7 @@
                 margin-bottom: 15px;
             }
             
-            .contact-btn {
+            .contact-btn, .email-btn {
                 margin-left: 0;
                 margin-top: 10px;
             }
@@ -226,6 +236,12 @@
             
             .contact-bar {
                 padding: 15px 0;
+            }
+            
+            .contact-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
             }
         }
     </style>
@@ -262,15 +278,16 @@
                     <span>dra.florenciamucci@gmail.com</span>
                 </div>
                 
-                <div class="contact-info">
-                    <i class="fas fa-phone-alt contact-icon"></i>
-                    <span>+54 9 11 2645-4771</span>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/5491126454771" class="contact-btn">
+                        <i class="fab fa-whatsapp btn-icon"></i>
+                        WhatsApp
+                    </a>
+                    <a href="mailto:dra.florenciamucci@gmail.com" class="contact-btn email-btn">
+                        <i class="fas fa-envelope btn-icon"></i>
+                        Enviar Email
+                    </a>
                 </div>
-                
-                <a href="https://wa.me/5491126454771" class="contact-btn">
-                    <i class="fab fa-whatsapp btn-icon"></i>
-                    Contactar por WhatsApp
-                </a>
             </div>
         </div>
     </section>
